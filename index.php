@@ -21,18 +21,22 @@
     for ($angka = 1; $angka <= 100; $angka++) {
         if ($angka%3 == 0 && $angka%5 == 0) {
             $luasPersegi = luasPersegi($angka, $angka);
-            echo $luasPersegi;
+            echo number_format($luasPersegi,2);
+            // echo $luasPersegi;
             echo "<br>";
         } elseif ($angka%5 == 0) {
             $kelilingLingkaran = kelilingLingkaran($angka);
-            echo $kelilingLingkaran;
+            echo number_format($kelilingLingkaran,2);
+            // echo $kelilingLingkaran;
             echo "<br>";
         } elseif ($angka%3 == 0) {
             $luasLingkaran = luasLingkaran($angka);
-            echo $luasLingkaran;
+            echo number_format($luasLingkaran,2);
+            // echo $luasLingkaran;
             echo "<br>";
         } else {
-            echo $angka;
+            echo number_format($angka,2);
+            // echo $angka;
             echo "<br>";
         }
     }
